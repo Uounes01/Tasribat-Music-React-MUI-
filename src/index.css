@@ -1,0 +1,43 @@
+/* index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-image: url('./assets/background.svg'); /* Path to your SVG image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-attachment: fixed; /* Keep the background fixed */
+  min-height: 100vh; /* Allow footer to push down */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Content and Footer styles */
+.content {
+  flex: 1; /* Allow content to grow and fill space */
+  padding-top: 120px; /* Space for the fixed panel */
+}
+
+/* index.css */
+
+/* Footer styles */
+.footer {
+  width: 300%; /* Full width */
+  padding: 60px 20px; /* Match padding with AboutSection */
+  background-color: black; /* Set solid black background */
+  color: #ffffff; /* Text color */
+  text-align: center; /* Center align text */
+  font-size: 1rem; /* Font size */
+  border-top: 1px solid #ffffff; /* Optional border on top */
+  position: relative; /* Ensure proper positioning */
+}
+
+/* Additional styling to match AboutSection */
+.footer h4, .footer h6 {
+  margin: 0; /* Reset margin for headings */
+}
