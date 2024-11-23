@@ -57,7 +57,7 @@ function App() {
       imageUrl: image2,
       audioUrl: song2,
     },
-    // Add more songs as needed
+   
   ]);
 
   const [open, setOpen] = useState(false);
