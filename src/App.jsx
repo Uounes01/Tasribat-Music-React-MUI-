@@ -3,7 +3,7 @@ import "./index.css";
 import TemplateDemo from "./TemplateDemo";
 import MusicCard from "./MusicCard";
 import AboutSection from "./AboutSection";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import Footer from "./Footer";
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
@@ -84,7 +84,7 @@ function App() {
   return (
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "20px" }}>
       <TemplateDemo onMusicButtonClick={scrollToMusicCard} />
-      <Fade left duration={3000}>
+      <Fade direction="left" duration={3000} >
         <AboutSection onMusicButtonClick={scrollToMusicCard} />
       </Fade>
       <div
@@ -96,7 +96,7 @@ function App() {
           marginTop: "40px",
         }}
       >
-        <Fade left duration={3000}>
+        <Fade direction="left" duration={3000}>
           {musicData.map((music) => (
             <MusicCard
               key={music.id}
@@ -109,7 +109,7 @@ function App() {
           ))}
         </Fade>
       </div>
-      <Fade bottom duration={3000}>
+      <Fade direction="down" duration={3000}>
         <Footer />
       </Fade>
 
